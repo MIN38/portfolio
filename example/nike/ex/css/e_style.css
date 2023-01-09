@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Play&display=swap");
+
+/* 전체 설정 */
+*{margin: 0;
+    padding: 0;}
+
+    ul {list-style: none;}
+    img {border: none;
+    vertical-align: bottom;}
+    a {color: #fff;
+    text-decoration: none;}
+
+/* 기본 설정 */
+body { background-color: #111;
+        position: fixed;
+        left: 0;
+        top: 0;
+    width: 100%;
+    height: 100%;}
+
+/* font-family: 'Monoton', cursive;
+font-family: 'Play', sans-serif; */
+/* 배경화면 설정 */
+.vid {position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+}
+
+.vid video {width: 100%;
+            height: 100%;}
+
+/* 헤더 설정 */
+.logo {position: fixed;
+        /* 기본적으로 reletive의 값을 가지고 있다. */
+        left: 40px;
+        top: 40px;
+        z-index: 100;
+}
+
+.logo img {width: 280px;
+            height: auto;}
+
+header { position: fixed;
+top: 0;
+left: -420px;
+    width: 700px;
+    height: 100%;
+    /* fixed가 아니면 적용할 수 없다. */
+    background: linear-gradient(-45deg, #e6fc55, #b9fb05, #97e031);
+    transform: skewX(-40deg);
+}
+#gnb {
+    position: absolute;
+    right: 0;
+    top: 150px;
+}
+
+#gnb> li {position: relative;}
+/* 직접 부르기, 다이렉트 빼먹지 않기 */
+
+#gnb> li>a {display: block;
+            text-align: right;
+        padding-right: 40px;
+    width: 220px;
+height: 50px;
+box-sizing: border-box;
+font: bold 18px/3 play;
+/* <↑ 한줄 쓰기하는 방법>
+                font-family: 'Play', sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 3; */
+            }
+
+
+    /* 글씨 기울이는 방법---------------------- */
+#gnb em {transform: skewX(40deg) !important;
+            display: inline-block;
+            /* 글씨 기울인상태로 똑바로 하기 */
+        }
+
+#gnb>li:hover>a {background-color: #111;}
+
+/* 2뎁스 */
+#gnb ul {position: absolute;
+top: 0;
+left: 0;
+transition: all 0.4s;
+opacity: 0;}
+
+#gnb ul a {display: block;
+    width: 150px;
+    height: 40px;
+    font: bold 16px/2.5 arial;
+    padding-left: 50px;
+    box-sizing: border-box;
+    background-color: #222;
+    color: #fff;
+    margin-bottom: 3;
+    border-bottom: 1px solid #b9fb05;
+            }
+
+    #gnb>li:hover ul {left: 205px;
+    opacity: 1;}
+
+    #gnb .community a {display: block;
+        width: 180px;
+        height: 40px;
+        font: bold 16px/2.5 arial;
+        padding-left: 50px;
+        box-sizing: border-box;
+        background-color: #222;
+        color: #fff;
+        margin-bottom: 3;
+        border-bottom: 1px solid #b9fb05;
+                }
