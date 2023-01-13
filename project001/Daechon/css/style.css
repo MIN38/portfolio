@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/* 전체설정 */
+*{margin: 0;
+padding: 0;}
+
+a{text-decoration: none;
+color: #000;}
+
+img{border: none;
+vertical-align: bottom;}
+
+ul,ol{list-style: none;}
+
+
+/* 기본설정 */
+header {width: 100%;
+height: 100px;
+background-color: #999;}
+
+.main01 {width: 100%;
+    height: 800px;
+    background-color: #777;}
+
+.main02 {width: 100%;
+        height: 900px;
+        background-color: #555;}
+
+        
+.main03 {width: 100%;
+    height: 900px;
+    background-color: #333;}
+
+    .main04 {width: 100%;
+        height: 900px;
+        background-color: #222;}
+
+        .main05 {width: 100%;
+            height: 900px;
+            background-color: #aaa;}
+
+            .main06 {width: 100%;
+                height: 900px;
+                background-color: #bbb;}
+
+                .main07 {width: 100%;
+                    height: 900px;
+                    background-color: #ccc;}
+    
+                    .footer {width: 100%;
+                        height: 200px;
+                        background-color: #ddd;}
