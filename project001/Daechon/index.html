@@ -13,32 +13,38 @@
     <script src="js/js.js"></script>
 </head>
 
-<!-- 구현 이후 각주 지우기!!!!!!!! -->
 <body>
     <header>
         <div class="wrap">
-            <h1>로고</h1>
+            <h1 class="logo"><img src="img/logo_white.png" alt=""></h1>
 
-            <div class="util">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-
-                <nav>
-                <ul class="gnb">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+            <nav>
+                <div class="util">
+                    <div class="search">
+                        <a href="#"><img src="img/header_search_w.png" alt=""></a>
+                        <form action="">
+                        <input type="search" placeholder="통합검색">
+                        </form>
+                    </div>
+                    <ul>
+                        <li><a href="#"><img src="img/header_user_add_w.svg" alt=""></a></li>
+                        <li><a href="#"><img src="img/header_instagram_w.svg" alt=""></a></li>
+                        <li><a href="#">EN</a></li>
+                    </ul>
+                </div>
+        
+                    <ul class="gnb">
+                        <li><a href="#">대천해수욕장</a></li>
+                        <li><a href="#">볼거리</a></li>
+                        <li><a href="#">먹거리</a></li>
+                        <li><a href="#">놀거리</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                    </ul>
             </nav>
         </div>
-        <div class="subMenu">
+
+        <!-- 서브메뉴 -->
+        <div class="sub_Menu">
 
             <!-- 대천해수욕장 -->
             <ul class="sub01">
@@ -93,69 +99,77 @@
             </ul>
 
         </div>
+
+
     </header>
 
-    <section class="main01">
-
-        <div class="txtBox">
-            <div class="weather"></div>
-
-            <!-- title, btn 각각 4개씩 -->
-
-        <div class="titleBox">
-
-            <div class="title01"> 
-                <h2>낭만이 가득한</h2>
-                <h1>대천해수욕장</h1>
+    <section class="mainslide">
+        <div class="wrap">
+            <div class="txtBox">
+                <div class="weather"></div>
+    
+                <!-- title, btn 각각 4개씩 -->
+    
+            <div class="titleBox">
+    
+                <div class="title01"> 
+                    <h2>낭만이 가득한</h2>
+                    <h1>대천해수욕장</h1>
+                </div>
+            
+                <div class="title02"> 
+                    <h2>찾아오시는 길부터</h2>
+                    <h1>추차장 위치까지</h1>
+                </div>
+            
+                <div class="title03">
+                    <h2>해양의 재발견</h2>
+                    <h1>보령 머드 축제</h1>
+                </div>
+            
+                <div class="title04">
+                    <h2>한 해의 마무리를</h2>
+                    <h1>해넘이 축제와 함께</h1>
+                </div>
             </div>
-        
-            <div class="title02"> 
-                <h2>찾아오시는 길부터</h2>
-                <h1>추차장 위치까지</h1>
-            </div>
-        
-            <div class="title03">
-                <h2>해양의 재발견</h2>
-                <h1>보령 머드 축제</h1>
-            </div>
-        
-            <div class="title04">
-                <h2>한 해의 마무리를</h2>
-                <h1>해넘이 축제와 함께</h1>
-            </div>
-        </div>
-
-        <div class="btn">
-            <ul>
-                <li>자세히보기</li>
-                <li>자세히보기</li>
-                <li>자세히보기</li>
-                <li>자세히보기</li>
-            </ul>
-        </div>
-
-        <div class="slide">
-            <div class="line"></div>
+    
+            <div class="btn">
                 <ul>
-                    <li>01</li>
-                    <li>02</li>
-                    <li>03</li>
-                    <li>04</li>
+                    <li>자세히보기</li>
+                    <li>자세히보기</li>
+                    <li>자세히보기</li>
+                    <li>자세히보기</li>
+                </ul>
+            </div>
+    
+            <div class="video">
+                <ul>
+                    <article></article>
+                </ul>
+            </div>
+            <div class="slide">
+                <div class="line"></div>
+                    <ul>
+                        <li>01</li>
+                        <li>02</li>
+                        <li>03</li>
+                        <li>04</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="iconBox">
+                <ul>
+                    <li><img src="img/main_under_mountain.png" alt="보령여행">보령여행</li>
+                    <li><img src="img/main_under_calendar.png" alt="예약안내">예약안내</li>
+                    <li><img src="img/main_under_cart.png" alt="편의시설">편의시설</li>
                 </ul>
             </div>
         </div>
-
-        <div class="iconBox">
-            <ul>
-                <li><img src="img/main_under_mountain.png" alt="보령여행">보령여행</li>
-                <li><img src="img/main_under_calendar.png" alt="예약안내">예약안내</li>
-                <li><img src="img/main_under_cart.png" alt="편의시설">편의시설</li>
-            </ul>
-        </div>
-    </div>
+</div>
     </section>
 
-    <section class="main02">
+    <section class="activity">
         <div class="wrap">
             <div class="txtBox">
                 <h2>대천해수욕장<br>제대로 즐기자!</h2>
@@ -164,76 +178,76 @@
 
             <div class="imgBox">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section class="main03">
+    <section class="theme">
         <div class="wrap">
             <h2>테마여행</h2>
             <div class="list">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
                 </ul>
             </div>
             <div class="img">
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+                <p><a href="#"></a></p>
+                <p><a href="#"></a></p>
+                <p><a href="#"></a></p>
+                <p><a href="#"></a></p>
             </div>
         </div>
     </section>
 
-    <section class="main04">
+    <section class="views">
         <div class="wrap">
             <h2>보령 9경 플러스</h2>
             <p>대천해수욕장과 함께하는 보령 여행</p>
             <div class="listBox">
                 <p class="left"></p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><a href="#"></a></li>
+                    <li<a href="#"></a>></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
                 </ul>
                 <p class="right"></p>
             </div>
         </div>
     </section>
 
-    <section class="main05">
+    <section class="news">
         <div class="wrap">
             <h2>공지사항</h2>
             <div class="notice">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
                 </ul>
                 <p class="more"></p>
             </div>
             <div class="banner">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
                 </ul>
             </div>
     
@@ -243,7 +257,7 @@
         </div>
     </section>
 
-    <section class="main06">
+    <section class="food">
         <h2>진짜 맛집 추천</h2>
         <div class="tab">
             <ul>
@@ -254,36 +268,69 @@
         </div>
         <div class="tab01">
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
             </ul>
         </div>
         <div class="tab02">
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
             </ul>
         </div>
     </section>
 
-    <section class="main07">
-        <h2>찾아오시는 길</h2>
-        <div class="map">
-            <iframe src="" frameborder="0"></iframe>
-            <div class="txt"></div>
+    <section class="map">
+        <div class="wrap">
+            <h2>찾아오시는 길</h2>
+            <div class="mapBox">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12861.104025086062!2d126.5072937406549!3d36.30561317301123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357085d3352ad9c9%3A0x840b3093c8134f2b!2z64yA7LKc7ZW07IiY7JqV7J6l!5e0!3m2!1sko!2skr!4v1673832963203!5m2!1sko!2skr" width="1920" height="680" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="mapTxt">
+                    <ul>
+                        <li><div class="box1"></div>
+                            <strong>대중교통 이용안내</strong></li>
+                        <li>
+                            <p><strong>기차</strong></p>
+                            <p><em>용산 → 대천역</em> (05:20 ~ 20:40 / 3시간 / 16회 운행)</p>
+                            <p><em>장항 → 대천역</em> (04:45 ~ 20:10 / 1시간 / 18회 운행)</p>
+                        </li>
+                    
+                        <li><p><strong>시외버스</strong></p>
+                            <p><em>서울 → 보령</em>(06:00 ~ 21:50) : 2시간 ~ 3시간 10분 소요 (32회 운행)</p>
+                            <p><em>대전 → 보령</em>(06:30 ~ 19:30) : 1시간 50분 ~ 2시간 40분 소요 (54회 운행)</p>
+                            <p><em>군산 → 보령</em>(06:50 ~ 19:00) : 1시간 30분 소요 (14회 운행)</p>
+                        </li>
+                        <li><p><strong>시내버스</strong></p>
+                        <p><em>[대천해수욕장 방면]</em></p>
+                        <p>대천역 앞 시내버스 승강장</p>
+                        <p>06:00 ~ 22:30까지, (매 10분 간격, 일일 113회 운행 (10km / 20분)</p>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
         </div>
     </section>
 
-    <footer></footer>
+    <footer>
+        <div class="wrap">
+            <h1 class="logo"></h1>
+            <div class="txtBox">
+                <p>개인정보처리 방침 |  저작권 정책 | 이메일무단수집거부 | 홈페이지개선의견 | 오시는 길</p>
+                <p>대천관광협회 [33489] 충남보령시 머드로123 Tel 041)933-7051
+                    본 웹사이트에 게시된 이메일 주소가 자동수집되는 것을 거부하며, 위반시 "정보통신망법"에 의해 처벌됨을 유념하시기 바랍니다
+                    Copyright © Boryeong City. All Right Reserved</p>
+            </div>
+        </div>
+    </footer>
 
-    <div class="top">TOP</div>
-    <div class="top">포토스팟</div>
+    <!-- <div class="top">TOP</div>
+    <div class="top">포토스팟</div> -->
 </body>
 </html>
 
@@ -291,8 +338,8 @@
 
 
 
-<!-- 소요시간 2시간 -->
-
+<!-- 소요시간 4시간 -->
+ 
 
 
 

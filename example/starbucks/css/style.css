@@ -119,45 +119,55 @@ nav .gnb>li>a {display: block;
 
                 /* 서브메뉴 */
 
-.sub_menu {display: none;
-        position: relative;}
 
-        
+       
 
 .sub_menu>div {width: 100%;
     padding: 20px 0;
-background-color: #000;
-opacity: 0;
-position: absolute;
-left: 0;
-top: 0;
-display: none;
+
+
+
+}
+
+.sub_menu {
+  position: relative;
 }
 .sub_menu #wrapper {
     display: flex;
 }
-.sub1{background-color: #000;
-display: none;}
+.sub_menu>div {position: absolute;
+left: 0;
+top:0px;
+display: none;
+width: 100%;
 
+}
+.sub1 {background-color: black;
+}
 .sub1 ul {width: 20%;}
 .sub1 li {}
 .sub1 li:nth-child(1) {font-weight: bold;
     margin-bottom: 20px;}
 
-.sub2 {background-color: red;
-    height: 50px;}
+    .sub2 {background-color: red;
+    height: 50px;
+ }
+ .sub3 {background-color: blue;
+  height: 50px;
+}
+.sub4 {background-color:green;
+  height: 50px;
+}
+.sub5 {background-color:lime;
+  height: 50px;
 
-.sub3 {background-color: blue;
-      height: 50px;}
-      .sub4 {background-color: green;
-        height: 50px;}
-        .sub5 {background-color: lime;
-          height: 50px;}
-
-          .sub6 {background-color: pink;
-            height: 50px;}
-            .sub7 {background-color: peachpuff;
-              height: 50px;}
+}
+.sub6 {background-color:pink;
+  height: 50px;
+}
+.sub7 {background-color:peachpuff;
+  height: 50px;
+}
 
 
 
@@ -235,15 +245,3 @@ left: 50%;}
               box-sizing: border-box;
             position: absolute;
           right: -100%;}
-
-/* body{overflow: hidden;} */
-
-/* flex를 하면 이미지가 커진다. */
-
-    /* 컨텐츠4번설정 */
-    .con2 {height: 300px;
-    }
-
-        /* 컨텐츠5번설정 */
-        .con2 {height: 300px;
-        }
