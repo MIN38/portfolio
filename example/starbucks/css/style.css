@@ -144,11 +144,19 @@ width: 100%;
 }
 .sub1 {background-color: black;
 }
+
 .sub1 ul {width: 20%;}
 .sub1 li {}
 .sub1 li:nth-child(1) {font-weight: bold;
     margin-bottom: 20px;}
 
+
+
+
+
+
+
+    
     .sub2 {background-color: red;
     height: 50px;
  }

@@ -13,10 +13,12 @@
     <script src="js/js.js"></script>
 </head>
 
+
+
 <body>
     <header>
         <div class="wrap">
-            <h1 class="logo"><img src="img/logo_white.png" alt=""></h1>
+            <h1 class="logo"><a href="#"><img src="img/logo_white.png" alt=""></a></h1>
 
             <nav>
                 <div class="util">
@@ -41,46 +43,64 @@
                         <li><a href="#">커뮤니티</a></li>
                     </ul>
             </nav>
-        </div>
+        </div><a href=""></a>
 
         <!-- 서브메뉴 -->
-        <div class="sub_Menu">
-
-            <!-- 대천해수욕장 -->
-            <ul class="sub01">
-                <li>해수욕장 소개</li>
-                <!-- 찾아오시는 길 : 3뎁스 주차장 안내 -->
-                <li>찾아오시는 길</li>
-                <li>주차장 안내</li>
-                <!-- 편의시설 : 3뎁스 숙박, 마트/편의점 -->
-                <li>편의시설</li>
-                <li>숙박</li>
-                <li>마트/편의점</li>
+<div class="sub_menu">
+    <div class="sub1">
+        <!-- 대천해수욕장 -->
+        <div id="wrap">
+            <ul>
+                <li><a href="#">대천해수욕장 소개</a></li>
             </ul>
-
-            <!-- 볼거리 -->
-            <ul class="sub02">
-                <!-- 축제안내 : 3뎁스 보령머드축제, 해넘이 축제 -->
+            <ul>
+                <li><a href="#">찾아오시는 길</a></li>
+                <li><a href="#">주차장 안내</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">편의시설</a></li>
+                <li><a href="#">숙박</a></li>
+                <li><a href="#">마트/편의점</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="sub2">
+        <!-- 볼거리 -->
+        <div id="wrap">
+            <ul>
                 <li>축제 안내</li>
                 <li>보령머드 축제</li>
                 <li>해넘이 축제</li>
+            </ul>
+            <ul>
                 <li>포토스팟</li>
+            </ul>
+            <ul>
                 <li>보령머드 박물관</li>
-                <!-- 보령 여행 : 3뎁스 보령9경, 특산물, 자연관광지 -->
+            </ul>
+            <ul>
                 <li>보령 여행</li>
                 <li>보령 9경 플러스</li>
                 <li>특산물</li>
                 <li>자연 관광지</li>
             </ul>
-
-            <!-- 먹거리 -->
-            <ul class="sub03">
-                <li>식당</li>
-                <li>카페</li>
+        </div>
+    </div>
+    <div class="sub3">
+        <!-- 먹거리 -->
+        <div id="wrap">
+            <ul>
+                <li>식당 맛집</li>
             </ul>
-
-            <!-- 놀거리 -->
-            <ul class="sub04">
+            <ul>
+                <li>카페 맛집</li>
+            </ul>
+        </div>
+    </div>
+    <div class="sub4">
+    <!-- 놀거리 -->
+        <div id="wrap">
+            <ul>
                 <li>스카이바이크</li>
                 <li>짚트랙</li>
                 <li>레저스포츠</li>
@@ -88,22 +108,26 @@
                 <li>조개잡이 체험</li>
                 <li>테마여행</li>
             </ul>
-
-            <!-- 커뮤니티 -->
-            <ul class="sub05">
+        </div>
+    </div>
+    <div class="sub5">
+        <!-- 커뮤니티 -->
+        <div id="wrap">
+            <ul>
                 <li>커뮤니티</li>
                 <li>공지사항</li>
                 <li>자유게시판</li>
                 <li>갤러리</li>
                 <li>질문해요</li>
             </ul>
-
         </div>
-
-
+    </div>
+</div>
+            
     </header>
 
     <section class="mainslide">
+        
         <div class="wrap">
             <div class="txtBox">
                 <div class="weather"></div>
@@ -116,7 +140,7 @@
                     <h2>낭만이 가득한</h2>
                     <h1>대천해수욕장</h1>
                 </div>
-            
+<!--             
                 <div class="title02"> 
                     <h2>찾아오시는 길부터</h2>
                     <h1>추차장 위치까지</h1>
@@ -130,15 +154,15 @@
                 <div class="title04">
                     <h2>한 해의 마무리를</h2>
                     <h1>해넘이 축제와 함께</h1>
-                </div>
+                </div> -->
             </div>
     
             <div class="btn">
                 <ul>
                     <li>자세히보기</li>
+                    <!-- <li>자세히보기</li>
                     <li>자세히보기</li>
-                    <li>자세히보기</li>
-                    <li>자세히보기</li>
+                    <li>자세히보기</li> -->
                 </ul>
             </div>
     
@@ -160,14 +184,16 @@
     
             <div class="iconBox">
                 <ul>
-                    <li><img src="img/main_under_mountain.png" alt="보령여행">보령여행</li>
-                    <li><img src="img/main_under_calendar.png" alt="예약안내">예약안내</li>
-                    <li><img src="img/main_under_cart.png" alt="편의시설">편의시설</li>
+                    <li><a href="#"><img src="img/main_under_mountain.png" alt="보령여행">보령여행</a></li>
+                    <li><a href="#"><img src="img/main_under_calendar.png" alt="예약안내">예약안내</a></li>
+                    <li><a href="#"><img src="img/main_under_cart.png" alt="편의시설">편의시설</a></li>
                 </ul>
             </div>
         </div>
 </div>
     </section>
+
+
 
     <section class="activity">
         <div class="wrap">
@@ -223,6 +249,7 @@
                     <li><a href="#"></a></li>
                     <li><a href="#"></a></li>
                     <li><a href="#"></a></li>
+                </ul>
                 </ul>
                 <p class="right"></p>
             </div>
@@ -288,6 +315,7 @@
 
     <section class="map">
         <div class="wrap">
+            <div class="a"></div>
             <h2>찾아오시는 길</h2>
             <div class="mapBox">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12861.104025086062!2d126.5072937406549!3d36.30561317301123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357085d3352ad9c9%3A0x840b3093c8134f2b!2z64yA7LKc7ZW07IiY7JqV7J6l!5e0!3m2!1sko!2skr!4v1673832963203!5m2!1sko!2skr" width="1920" height="680" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -317,9 +345,17 @@
         </div>
     </section>
 
+
+
+
+
+
+
+
+
     <footer>
         <div class="wrap">
-            <h1 class="logo"></h1>
+            <h1 class="footer_logo"><a href="#"><img src="img/logo_white.png" alt=""></a></h1>
             <div class="txtBox">
                 <p>개인정보처리 방침 |  저작권 정책 | 이메일무단수집거부 | 홈페이지개선의견 | 오시는 길</p>
                 <p>대천관광협회 [33489] 충남보령시 머드로123 Tel 041)933-7051

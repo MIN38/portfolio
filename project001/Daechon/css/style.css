@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
 /* 전체설정 */
 
@@ -24,7 +24,7 @@ ol {
 }
 
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 /* 기본설정 */
@@ -82,7 +82,7 @@ header {
 
 footer {
   width: 100%;
-  height: 150px;
+  height: 130px;
   background-color: greenyellow;
 }
 
@@ -93,48 +93,35 @@ footer {
 
 /* ################################################################################### */
 
-
 /* header 설정 */
 header {
   background-color: pink;
   height: 100px;
   font-size: 15px;
   position: relative;
-  left: 0;
-  top: 0;
   z-index: 9999;
 }
 
-header .warp {}
-
+header .wrap {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* 로고 설정 */
-.wrap .logo {
-  width: 12%;
+.wrap .logo  {
+  width: 10%;
   height: 100%;
   background-color: black;
-    vertical-align: middle;
-    display: flex;
-    justify-content: center;
-
-
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
 }
+.wrap .logo a {display: flex;}
+.wrap img {}
 
-.wrap  img {
-  width: 148px;
-  height: 109px;
-  margin-top: -2px;
-  
+nav {
+  width: 90%;
 }
-
-nav {width: 90%;}
-
-
-
-
-
-
-
 
 /* util 상세 설정 */
 nav .util {
@@ -145,7 +132,6 @@ nav .util {
   align-items: center;
 }
 
-
 /* 메뉴 설정 */
 nav .gnb {
   display: flex;
@@ -155,78 +141,127 @@ nav .gnb {
   font-size: 16px;
   align-items: center;
   font-weight: bold;
-  
 }
-nav .gnb>li {}
-nav .gnb>li>a {display: block;
+nav .gnb> li {}
+
+nav .gnb > li > a {
+  display: block;
   padding: 25px;
-color: #FFF;}
-
-/* 서브 메뉴 */
-
+  color: #fff;
+}
 
 
+/* 서브메뉴 */
+.sub_menu {position:absolute ;
+left: 0;
+top: 100px;
+width: 100%;
+}
 
+.sub_menu>div {
+  position: absolute;  
+  right: 0;
+  top: 0;
+  width: 100%;
+  display: none;
+  padding: 20px 0;
+  height: 180px;
+  background-color: white;}
 
+.sub_menu #wrap {display: flex;
+  height: 100%;
+  position: absolute;
+  right: 30px;
+  top: 0px;
+  margin-left: 230px;
+ margin-right: 250px;
+  box-sizing: border-box;
+  padding: 30px 30px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
 
+#wrap>ul {width: 150px;
+  margin-left: 150px;}
 
+#wrap>ul>li {margin-bottom: 15px;}
+.sub1 #wrap>ul:nth-child(1)>li>a { padding-bottom: 10px;
+  border-bottom: 2px solid rgba(0,0,0,0.1);}
+.sub1 #wrap>ul>li:nth-child(1)>a { border-bottom: 2px solid rgba(0,0,0,0.1);}
+.sub1 #wrap>ul>li, .sub2 #wrap>ul>li {margin-bottom: 15px;}
 
-  
+.sub1 li:nth-child(1), .sub2 li:nth-child(1){font-weight: bold;
+padding-bottom: 5px;}
+
+.sub3 li {font-weight: bold;}
+.sub4 ul {display: flex;}
+.sub4 #wrap>ul>li {font-weight: bold;
+  margin-bottom: 40px;}
+.sub5 #wrap>ul>li {font-weight: bold;
+  margin-bottom: 40px;}
+
 
 /* -------------------------------------------------------- */
-header .wrap {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* 로고 설정 */
-
 
 /* 유틸리티 설정 */
 
+nav .util ul {
+  display: flex;
+  justify-content: flex-end;
+}
 
-nav .util ul { display: flex;
-  justify-content: flex-end;}
+nav .util div {
+}
 
-nav .util div {}
+nav .util li {
+}
 
-nav .util li {}
-
-nav .util a {display: block;
+nav .util a {
+  display: block;
   padding: 10px;
-  color: #fff;}
+  color: #fff;
+}
 
-nav .util img {width: 22px;
+nav .util img {
+  width: 22px;
   height: 22px;
 }
-nav .util p {font-size: 16px;}
+nav .util p {
+  font-size: 16px;
+}
 
 nav .search {
-position: relative;
-} 
+  position: relative;
+}
 nav .search a {
-
   padding: 2px;
   border: solid #fff 1px;
   border-radius: 4px;
   left: 80px;
   bottom: 18px;
-
 }
-nav .search input {display: none;}
-nav .search a {position: absolute;}
-nav .search img {}
+nav .search input {
+  display: none;
+}
+nav .search a {
+  position: absolute;
+}
+nav .search img {
+}
 
 /* 서치를 클릭했을때 값  */
-header .search.on {width: 160px;}
-header .search input {display: inline-block;
-opacity: 0;
-background-color: #fff;
-width: 120px;
-margin-top: 16px;
-padding: 8px 10px;
-border: none;
-font-size: 12px;}
+header .search.on {
+  width: 160px;
+}
+header .search input {
+  display: inline-block;
+  opacity: 0;
+  background-color: #fff;
+  width: 120px;
+  margin-top: 16px;
+  padding: 8px 10px;
+  border: none;
+  font-size: 12px;
+}
 
 
 
@@ -234,10 +269,11 @@ font-size: 12px;}
 
 
 
+/* ###################################################### */
 
 /* mainslide 설정 */
-.mainslide {
-}
+.mainslide {}
+
 .mainslide .txtBox {
   display: flex;
   align-items: center;
@@ -282,15 +318,80 @@ font-size: 12px;}
   background-color: bisque;
 }
 
+/* iconBox 상세 설정 */
+
+.mainslide .iconBox {
+  display:flex ;
+}
+.iconBox ul {display: flex;}
+.iconBox li {}
+.iconBox a {}
+
+/* .mainslide .iconBox {
+  display: flex;
+  justify-content: flex-end;
+  background-color: red;
+  height: 30%;
+  align-items: center;
+
+  
+nav .util ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav .util div {
+}
+
+nav .util li {
+}
+
+nav .util a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+}
+
+nav .util img {
+  width: 22px;
+  height: 22px;
+}
+nav .util p {
+  font-size: 16px;
+}
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ###################################################### */
+
 /* map 설정*/
 /* 구글 지도 설정 */
 
 .map {
   position: relative;
+
 }
 .map .wrap {
   display: flex;
 }
+.map .wrap .a {	width: 10px;
+	height: 50px;
+background-color: red;}
+.map .wrap h2 {  border-bottom: 2px solid red;}
 .mapBox {
 }
 .map iframe {
@@ -364,15 +465,82 @@ font-size: 12px;}
   font-weight: bold;
 }
 
+/* ###################################################### */
+
+
 /* footer */
-.footer {
-  width: 100%;
-  height: 200px;
-  background-color: #222;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+footer {
+  font-size: 12px;
+  position: relative;
 }
+
+footer .wrap{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* 로고 설정 */
+
+.wrap .footer_logo {
+  width: 10%;
+  height: 100%;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+}
+.wrap .footer_logo a {display: flex;}
+
+footer .wrap .txtBox{
+  width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ####################미디어 쿼리 구간################### */
 
